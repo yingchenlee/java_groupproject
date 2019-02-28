@@ -1,0 +1,128 @@
+.topheader{
+    height: 100px;
+    background: #0062cc;
+    position: sticky;
+    top: 0;
+}
+.header_main{
+    margin: 0 auto;
+    width: 1150px;
+    height: 100px;
+    background: #0062cc;
+}
+.mainpage{
+    background: #FAFAFA;
+    margin: 0 auto;
+    width: 1100px;
+    box-shadow: 0 0 15px 1px;
+    min-height: 1100px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid lightgray;
+}
+.logo{
+    width: 60px;
+    display: inline-block;
+   /*  margin-left: 20px; */
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#privacy{
+    font-size: 11pt;
+    color: gray;
+    text-align: center;
+}
+#signup{
+    width: 400px;
+}
+#backdoor{
+	margin-top:15px;
+    margin-bottom: 10px;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    font-size:60px;
+    /* margin-left: 10px; */
+}
+.login{
+    margin-left: 390px;
+    height: 95px;
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: top;
+    /* background: yellow; */ 
+}
+.login-form{
+    /* margin-top: 10px; */
+    height: 50px;
+    width: 185px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 20px;
+   
+}
+#form{
+    border: 1px solid black;
+}
+#login_button{
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 32px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+#form2{
+    height: 50px;
+    /* margin-top: 10px; */
+    /* border: 1px solid black; */
+}
+#form4{
+    width: 190px;
+    display: inline-block;
+}
+#form5{
+    width: 190px;
+    margin-left: 14px;
+    display: inline-block;
+}
+#form3{
+    height: 50px;
+    width: 190px;
+    display: inline-block;
+}
+.birttext{
+    font-weight: bold;
+    font-size: 15pt;
+    /* display: inline-block; */
+    /* background: green; */
+    vertical-align: top;
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    /* margin-left: 10px; */
+    
+}
+#bday{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    /* background: red; */
+}
+.birth_field{
+    vertical-align: top;
+    width: 400px;
+    height: 52px;
+    /* background: yellow; */
+}
+.sex{
+    margin-left: 10px;
+    font-size: 15pt;
+    display: inline-block;
+    /* background: green; */
+    width: 385px;
+}
+.birthdate{
+    /* background: red; */
+    width: 205px;
+    display: inline-block;
+
+}

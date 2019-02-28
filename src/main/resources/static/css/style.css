@@ -1,0 +1,237 @@
+.empty{
+    height: 20px;
+}
+.body{
+    background: #FAFAFA;
+}
+.main{
+    width: 905px;
+    margin: 0px auto;
+    height: 1000px;
+
+    /* border: 1px solid black; */
+}
+
+
+.reg_container{
+    margin-top: 20px;
+    width: 440px;
+    height: 690px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    box-shadow: 0 0 5px 0px;
+}
+.footer{
+    box-shadow: 0 0 15px 1px;
+    background: white;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid lightgray;
+    
+}
+.f_login{
+    width: 190px;
+    display: inline-block;
+}
+.g_login{
+    width: 190px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.registration{
+    margin: 20px;
+    width: 402px;
+    height: 600px;
+    backgroung: yellow;
+    /* margin-left: 30px; */
+}
+.leftbody{
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 600px;
+    height: 800px;
+    margin-left: 30px;
+    /* border: 1px solid lightgray; */
+    display: inline-block;
+    vertical-align: top;
+}
+.leftbody img{
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 500px;
+}
+/* .log_here{
+    width: 400px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 80px;
+    margin-left: 130px;
+} */
+.flashmessages{
+    color: red;
+    font-weight: bold;
+    font-size: 14pt;
+}
+.header{
+    width: 900px;
+    height: 70px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+.right_header{
+    display: inline-block;
+}
+.left_header{
+    display: inline-block;
+    margin-left: 150px;
+}
+.inbox{
+    width: 450px;
+    /* border-right: 1px solid gray; */
+    height: 750px;
+    margin-top: 40px;
+    margin-right: 0px;
+    /* background: yellow; */
+    display: inline-block;
+    margin-left: 5px;
+}
+.inbox span{
+    font-weight: bold;
+    font-size: 12pt;
+}
+.inbox img{
+    width: 30px;
+    vertical-align: bottom;
+    
+}
+.received{
+    width: 445px;
+    height: 310px;
+    /* background: gray; */
+    display: inline-block;
+    overflow-y: auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.sent{
+    width: 445px;
+    height: 310px;
+    /* background: gray; */
+    display: inline-block;
+    overflow-y: auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.outbox{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 400px;
+    height: 600px;
+    margin-top: 40px;
+    /* background: green; */
+    display: inline-block;
+    vertical-align: top;
+}
+.message{
+    width: 250px;
+    height: 100px;
+}
+
+
+
+.header2{ 
+    width: 800px;
+    /* background: yellow; */
+    height: 50px; 
+}
+.header2 p{
+    float: right;
+    margin-left: 20px;
+}
+.main{
+    /* width: 900px; */
+    /* background: green; */
+}
+.newjob_button{
+    margin-left: 40px;
+    border:2px solid black;
+    width: 130px;
+    text-align: center;
+    height: 30px;
+    background: lightgray;
+    border-radius: 5px;
+}
+.field{
+    width: 380px;
+    float: right;
+    margin-right: 60px;
+    
+}
+.date{
+    margin-left: 65px;
+}
+.plan {
+    margin-right: 60px;
+    width: 380px;
+    height: 60px;
+    float: right;
+
+}
+.send_cancel_button{
+    width: 200px;
+    height: 40px;
+    margin-left: 40px;
+    
+}
+.add_job{
+    width: 600px;
+    /* background: yellow; */
+    height: 300px;
+    border: 2px solid black;
+}
+.create{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.create span{
+    /* color: red; */
+    width: 200px;
+    height: 40px;
+    margin-left: 40px;
+    border: 1px solid gray;
+    background: lightgray;
+}
+
+
+
+
+
+
+
+
+
+.registration{
+    width: 430px;
+    height: 800px;
+    /* border: 1px solid black; */
+    margin-left: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+.log_here{
+    width: 400px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 80px;
+    margin-left: 130px;
+}
