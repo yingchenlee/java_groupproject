@@ -1,5 +1,6 @@
 package com.codingdojo.javaproject1.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
@@ -13,7 +14,7 @@ public class MService {
 	public MService(MRepo mR) {
 		this.mR = mR;
 	}
-	public Optional<Message> listMs(Long id) {
+	public List<Message> listMs(Long id) {
 		return mR.findByReceiverId(id);
 	}
 	

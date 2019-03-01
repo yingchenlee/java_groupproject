@@ -11,5 +11,5 @@ import com.codingdojo.javaproject1.models.Message;
 @Repository
 public interface MRepo extends CrudRepository<Message, Long> {
 	List<Message> findAll();
-	Optional<Message> findByReceiverId(Long id);
+	List<Message> findByReceiverId(Long id);
 }

@@ -1,5 +1,6 @@
 package com.codingdojo.javaproject1.controllers;
 
+import java.util.List;
 import java.util.Optional;
 
 import javax.servlet.http.HttpSession;
@@ -79,7 +80,7 @@ public class UserController {
     	User u = userService.findUserById(userId);
     	model.addAttribute("user", u);
     	// Message
-    	Optional<Message> mgs = mS.listMs(userId);
+    	List<Message> mgs = mS.listMs(userId);
     	model.addAttribute("messages", mgs);
     	return "homePage.jsp";
     }
