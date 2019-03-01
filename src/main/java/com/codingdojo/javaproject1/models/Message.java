@@ -85,5 +85,6 @@ public class Message {
 	public void setReceiverId(Long receiverId) {
 		this.receiverId = receiverId;
 	}
+	
     
 }

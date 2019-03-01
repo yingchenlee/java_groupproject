@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -75,10 +76,11 @@ public class UserController {
     }
     
     @RequestMapping("/home")
-    public String home(HttpSession session, Model model) {
+    public String home(@ModelAttribute("message") Message msg, BindingResult result, HttpSession session, Model model) {
     	Long userId = (Long) session.getAttribute("userId");
     	User u = userService.findUserById(userId);
     	model.addAttribute("user", u);
+    	model.addAttribute("userId", userId);
     	// Message
     	List<Message> mgs = mS.listMs(userId);
     	model.addAttribute("messages", mgs);
@@ -93,6 +95,16 @@ public class UserController {
     	return "calendar.jsp";
     }
     
+    @GetMapping("/cal")
+    public String calendar() {
+    	return "caljs.jsp";
+    }
+    
+    @GetMapping("/chats")
+    public String chats() {
+    	return "conversation.jsp";
+    }
+    
     @RequestMapping("/logout")
     public String logout(HttpSession session) {
         session.invalidate();
@@ -100,5 +112,14 @@ public class UserController {
     }
     
     // Message
-    
+    // create
+    @PostMapping("/sendmsg")
+    public String sendmsg(@Valid @ModelAttribute("message") Message msg, BindingResult result) {
+    	if (result.hasErrors()) {
+    		return "homePage.jsp";
+    	} else {
+    		mS.saveandsend(msg);
+    		return "redirect:/home";
+    	}
+    }
 }

@@ -18,4 +18,8 @@ public class MService {
 		return mR.findByReceiverId(id);
 	}
 	
+	public Message saveandsend(Message m) {
+		return mR.save(m);
+	}
+	
 }
