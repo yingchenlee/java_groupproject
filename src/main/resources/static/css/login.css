@@ -1,6 +1,6 @@
 .topheader{
     height: 100px;
-    background: #0062cc;
+    background-image: linear-gradient(#333333,#dd1818);
     position: sticky;
     top: 0;
 }
@@ -8,7 +8,7 @@
     margin: 0 auto;
     width: 1150px;
     height: 100px;
-    background: #0062cc;
+    background-image: linear-gradient(#333333,#dd1818);
 }
 .mainpage{
     background: #FAFAFA;

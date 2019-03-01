@@ -39,7 +39,8 @@ crossorigin="anonymous">
 
 	<div class="mainpage">
 		<div class="leftbody">
-            <img src="/coming_soon.jpg" alt="">
+			<h2>Here To Fulfill Your Scheduling Needs!</h2>
+            <img src="/calendar_icon.png" alt="">
         </div>
 	    <div class="reg_container">
 	   		<div class="registration">
@@ -83,8 +84,8 @@ crossorigin="anonymous">
 	                        </div> <br>
 	                    <p id="privacy">By clicking Sign up, you are indicating that you have read and agree to the Terms of Service and Privacy Policy.</p>
 	                    <button id="signup" type="submit" class="btn btn-primary">Sign Up!</button> <br>
-	                    <br> <img class="f_login" src="/static/images/facbook_login.jpg" alt="">
-	                    <img class="g_login" src="/static/images/google_login.jpg" alt="">
+	                    <!-- <br> <img class="f_login" src="/static/images/facbook_login.jpg" alt="">
+	                    <img class="g_login" src="/static/images/google_login.jpg" alt=""> -->
 	                </form:form>
 	             </div>
 	      </div>			

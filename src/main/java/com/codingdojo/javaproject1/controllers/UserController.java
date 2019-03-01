@@ -1,5 +1,7 @@
 package com.codingdojo.javaproject1.controllers;
 
+import java.util.Optional;
+
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -12,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.codingdojo.javaproject1.models.Message;
 import com.codingdojo.javaproject1.models.User;
+import com.codingdojo.javaproject1.services.MService;
 import com.codingdojo.javaproject1.services.UserService;
 import com.codingdojo.javaproject1.validator.UserValidator;
 
@@ -23,9 +27,11 @@ public class UserController {
 
 	private final UserService userService;
 	private final UserValidator userValidator;
+	private final MService mS;  // new
 	
-	public UserController(UserService userService, UserValidator userValidator) {
+	public UserController(UserService userService, MService mS, UserValidator userValidator) {
         this.userService = userService;
+        this.mS = mS;
         this.userValidator = userValidator;
     }
 	
@@ -34,6 +40,10 @@ public class UserController {
         
         return "index.jsp";
     }
+	@GetMapping("/more")
+	public String userInfo() {
+		return "moreinfo.jsp";
+	}
 	
     @RequestMapping(value="/registration", method=RequestMethod.POST)
     public String registerUser(@Valid @ModelAttribute("newUser") User user, BindingResult result, HttpSession session) {
@@ -68,13 +78,26 @@ public class UserController {
     	Long userId = (Long) session.getAttribute("userId");
     	User u = userService.findUserById(userId);
     	model.addAttribute("user", u);
+    	// Message
+    	Optional<Message> mgs = mS.listMs(userId);
+    	model.addAttribute("messages", mgs);
     	return "homePage.jsp";
     }
+    // instructor page
+    @RequestMapping("/instructor")
+    public String instructor(HttpSession session, Model model) {
+    	Long userId = (Long) session.getAttribute("userId");
+    	User u = userService.findUserById(userId);
+    	model.addAttribute("user", u);
+    	return "calendar.jsp";
+    }
+    
     @RequestMapping("/logout")
     public String logout(HttpSession session) {
         session.invalidate();
         return "redirect:/";
     }
     
-
+    // Message
+    
 }
